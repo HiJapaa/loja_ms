@@ -50,6 +50,7 @@ function App() {
       if (!querySnapshot.empty) {
         const confirmar = window.confirm('Já existe um registro para a loja selecionada. Gostaria de substituir a leitura salva?')
         if (!confirmar) {
+          alert('Cadastrado NÃO realizado!')
           return
         }
         // Remove o(s) registro(s) antigo(s) da loja
